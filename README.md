@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1418504874.svg)](https://doi.org/10.5281/zenodo.23360559)
+
 # EANAS-GreenAI
 ### Energy-Aware Neural Architecture Search for Edge-AI Deployments
 
