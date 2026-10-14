@@ -196,7 +196,7 @@ Actual edge-device measurements require access to the target hardware. Results f
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone <[YOUR_GITHUB_REPOSITORY_URL](https://github.com/sruthijanga/EANAS-GreenAI)>
 cd EANAS-GreenAI
 ```
 
@@ -567,15 +567,6 @@ The input CSV must contain the fields expected by the summarization script, incl
 
 For each seed, preserve the raw result records and record the configuration, software environment, hardware platform, and energy measurement method.
 
-Report:
-
-- Mean performance
-- Standard deviation
-- 95% confidence intervals
-- Per-seed results
-- Relevant baseline comparisons
-- Statistical test results, when appropriate
-
 A confidence interval should be calculated from the independent experimental units appropriate to the research design. Repeated inference measurements from a single trained model should not automatically be treated as independent training runs.
 
 Statistical significance tests require suitable raw observations and a justified testing procedure. Summary statistics alone are not sufficient for every comparison.
@@ -596,16 +587,6 @@ For reproducible experiments:
 8. Report failed runs, missing measurements, and deviations from the intended protocol.
 9. Distinguish smoke-test validation from empirical performance evaluation.
 10. Document implementation choices that are not fully specified by the manuscript.
-
-### Manuscript-reported results
-
-The manuscript reports values including:
-
-| Metric | Reported value |
-|---|---:|
-| Accuracy | 95.3% |
-| Latency | 16.8 ms |
-| Energy consumption | 0.91 J |
 
 These values are manuscript-reported reference figures, not guaranteed outputs of this implementation. They must not be described as independently reproduced results without corresponding experimental evidence.
 
