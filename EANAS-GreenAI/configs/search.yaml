@@ -1,0 +1,35 @@
+search:
+  iterations: 50
+  population_size: 20
+  max_evaluations: 1000
+  search_epochs: 10
+  mutation_prob: 0.20
+  crossover_prob: 0.80
+  tournament_size: 3
+  elite_count: 2
+  batch_size: 128
+  controller_lr: 0.00035
+  controller_hidden: 128
+  device: cpu
+  profile_warmup: 50
+  profile_runs: 1000
+  max_train_batches: null
+  max_val_batches: null
+  energy_mode: measured
+  calibrated_dynamic_power_w: null
+  power_csv: null
+  output_dir: results/search
+  seed: 42
+objective:
+  accuracy_weight: 0.50
+  latency_weight: 0.25
+  energy_weight: 0.25
+  latency_ref_ms: 25.0
+  energy_ref_j: 1.0
+  max_latency_ms: null
+  max_energy_j: null
+  max_memory_mb: null
+data:
+  root: data
+  workers: 2
+  synthetic: false

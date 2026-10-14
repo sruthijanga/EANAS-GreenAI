@@ -1,0 +1,7 @@
+stem_channels: 32
+blocks:
+  - {op: dwconv3, channels: 32, stride: 1}
+  - {op: dwconv3, channels: 64, stride: 2}
+  - {op: attention, channels: 64, stride: 1}
+  - {op: dwconv3, channels: 128, stride: 2}
+  - {op: conv3, channels: 128, stride: 1, residual: true}
